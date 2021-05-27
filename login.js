@@ -1,3 +1,9 @@
 function Login() {
-  return <h1>Login</h1>;
+  const ctx = React.useContext(UserContext);
+  return (
+    <h1>
+      Login
+      {JSON.stringify(ctx)}
+    </h1>
+  );
 }

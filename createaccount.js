@@ -1,3 +1,9 @@
 function CreateAccount() {
-  return <h1>Create Account</h1>;
+  const ctx = React.useContext(UserContext);
+  return (
+    <h1>
+      Create Account
+      {JSON.stringify(ctx)}
+    </h1>
+  );
 }
